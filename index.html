@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-replace-svg="nest"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap" rel="stylesheet">
+    <title>Movie reviews</title>
+  </head>
+  <body>
+    <div class="navbar">
+       <div class="navbar-container">
+         <div class="logo-container"><h1 class="logo">Movies Web</h1></div>
+         <div class="menu-container">
+           <ul class="menu-list">
+             <li class="menu-list-item b">Home</li>
+             <li class="menu-list-item">Movies</li>
+             <li class="menu-list-item">Series</li>
+           </ul>
+         </div>
+       </div>
+    </div>
+    <div class="sidebar">
+     <i class="left-menu-icon fas fa-search"></i>
+     <i class="left-menu-icon fas fa-home"></i>
+     <i class="left-menu-icon fas fa-users"></i>
+     <i class="left-menu-icon fas fa-bookmark"></i>
+    </div>
+    <h2>What do you want to watch next?</h2>
+    <div class="search-box">
+      <input class="search-txt"  id = "movie-search-box" onkeyup="findMovies()" onclick = "findMovies()" type="text"  placeholder="Type to search">
+      <i class="search-btn-icon fas fa-search"></i>
+    </div>
+    <div class="container">
+      <div class="content-container">
+         <div class="Movies"></div>
+      </div>
+    </div>
+    <div class = "search-list" id = "search-list">
+                </div>
+            </div>
+        </div>
+        <div class = "container">
+            <div class = "result-container">
+                <div class = "result-grid" id = "result-grid">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+    <main id="main"></main>
+  </body>
+</html>
